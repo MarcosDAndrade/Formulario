@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+
+    <form>
+
+        <fieldset>
+            <div>
+                <h1 class="h1">Formulário de Contato</h1>
+                <p class="h1" style="text-align: center;">Preencha todos os campos</p>
+            </div>
+
+
+            <hr> <br>
+            <div>
+                <label class="campo"><strong>Nome:</strong> </label>
+                <input class="campo" type="text" name="Nome" id="Nome" placeholder="Insira o nome" required>
+            </div>
+            <br>
+            <div>
+                <label><strong>Email:</strong></label>
+                <input class="campo" type="email" name="email" id="email" placeholder="Insira o E-mail" required></input>
+            </div>
+            <br>
+
+            <div>
+                <label class="campo"><strong>Assunto:</strong></label>
+                <select class="campo" name="assunto" id="assunto">
+                    <option selected disabled>Selecione</option>
+                    <option>Informações</option>
+                    <option>Anexo</option>
+                    <option>Outros</option>p
+                </select>
+            </div>
+            <br><br>
+            <label class="texto"><strong>Mensagem:</strong></label> <br>
+            <textarea class="campo" name="texto" id="texto" rows="6" style="width: 26em; resize: none;" placeholder="Deixe aqui sua mensagem:"></textarea>
+            <br>
+            <button class="botao" type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
